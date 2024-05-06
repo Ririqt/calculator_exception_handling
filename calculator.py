@@ -53,3 +53,4 @@ def calculator():
                 repeat = input("Do you want to use the Program again? ('y' for Yes / 'n' for No): ").strip().lower()
                 if repeat not in ['y', 'n']:
                     repeat_error_message = "Invalid input! Please enter 'y' for Yes or 'n' for No."
+                    raise ValueError(repeat_error_message)
