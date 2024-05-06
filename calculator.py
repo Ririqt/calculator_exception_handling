@@ -50,3 +50,4 @@ def calculator():
 
         while True:
             try:
+                repeat = input("Do you want to use the Program again? ('y' for Yes / 'n' for No): ").strip().lower()
