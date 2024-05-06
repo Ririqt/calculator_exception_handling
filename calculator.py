@@ -23,3 +23,4 @@ def calculator():
             choice = int(input("Enter the Operation from 1-4 (1,2,3,4): "))
 
             if choice not in [1, 2, 3, 4]:
+                raise ValueError()
