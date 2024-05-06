@@ -27,6 +27,8 @@ def calculator():
             print("\033[92m2. Subtraction (-) \033[0m")
             print("\033[93m3. Multiplication (*) \033[0m")
             print("\033[31m4. Division (/) \033[0m")
+
+            # User's Input for it's Choice
             choice_string = input("Enter the Operation from 1-4 (1,2,3,4): ")
 
             if choice_string.startswith('0') and not choice_string.startswith('0.'):
