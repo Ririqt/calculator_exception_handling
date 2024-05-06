@@ -27,4 +27,7 @@ def calculator():
 
             num_1 = float(input("Please Enter The First Number: "))
             num_2 = float(input("Please Enter the Second Number: "))
-            
+
+            if choice == 1:
+                print("Result: ", add_number(num_1, num_2))
+                
