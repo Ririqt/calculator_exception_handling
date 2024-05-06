@@ -40,16 +40,8 @@ def calculator():
                 raise ValueError()
 
             # User's Input for the Numbers
-            num_1_string = input("Please Enter The First Number: ")
-            if num_1_string.startswith('0') and not num_1_string.startswith('0.'):
-                raise ValueError()
-
-            num_2_string = input("Please Enter the Second Number: ")
-            if num_2_string.startswith('0') and not num_2_string.startswith('0.'):
-                raise ValueError()
-
-            num_1 = float(num_1_string)
-            num_2 = float(num_2_string)
+            num_1 = float(input("Please Enter The First Number: "))
+            num_2 = float(input("Please Enter the Second Number: "))
 
             # Call the Desired Functions upon user's choice
             if choice == 1:
