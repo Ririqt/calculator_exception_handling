@@ -60,4 +60,4 @@ def calculator():
                 print(exception)
 
         if repeat != 'y':
-            
+            print("Thank You for using this Calculator!")
