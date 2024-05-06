@@ -39,4 +39,4 @@ def calculator():
 
         except ValueError:
             error_message = "You Have Entered an Invalid Character, Number, or Choice"
- 
+            print("ValueError: " + error_message)
