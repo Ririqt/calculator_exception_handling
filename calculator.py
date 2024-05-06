@@ -20,3 +20,4 @@ def calculator():
             print("2. Subtraction (-) ")
             print("3. Multiplication (*) ")
             print("4. Division (/)")
+            choice = int(input("Enter the Operation from 1-4 (1,2,3,4): "))
