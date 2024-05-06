@@ -49,4 +49,4 @@ def calculator():
             print("An error occurred: Please Try Again!", exception)
 
         while True:
-            
+            try:
