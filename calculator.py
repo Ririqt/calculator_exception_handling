@@ -42,4 +42,4 @@ def calculator():
             print("ValueError: " + error_message)
 
         except ZeroDivisionError:
-            
+            zero_division_error_message = "The Number Cannot Be Divided By Zero"
