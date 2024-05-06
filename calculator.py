@@ -62,3 +62,6 @@ def calculator():
         if repeat != 'y':
             print("Thank You for using this Calculator!")
             break
+
+
+calculator()
