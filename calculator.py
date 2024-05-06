@@ -11,3 +11,4 @@ def calculator():
     def divide_number(number_1, number_2):
         if number_2 == 0:
             raise ZeroDivisionError()
+        return number_1 / number_2
