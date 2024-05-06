@@ -27,7 +27,12 @@ def calculator():
             print("\033[92m2. Subtraction (-) \033[0m")
             print("\033[93m3. Multiplication (*) \033[0m")
             print("\033[31m4. Division (/) \033[0m")
-            choice = int(input("Enter the Operation from 1-4 (1,2,3,4): "))
+            choice_string = input("Enter the Operation from 1-4 (1,2,3,4): ")
+
+            if choice_string.startswith('0') and not choice_string.startswith('0.'):
+                raise ValueError()
+
+            choice = int(choice_string)
 
             if choice not in [1, 2, 3, 4]:
                 raise ValueError()
