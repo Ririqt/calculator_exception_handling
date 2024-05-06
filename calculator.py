@@ -16,10 +16,10 @@ def calculator():
     while True:
         try:
             print("-------Choose Your Operation-------\n")
-            print("1. Addition (+) ")
-            print("2. Subtraction (-) ")
-            print("3. Multiplication (*) ")
-            print("4. Division (/)")
+            print("\033[94m1. Addition (+) \033[0m")
+            print("\033[92m2. Subtraction (-) \033[0m")
+            print("\033[93m3. Multiplication (*) \033[0m")
+            print("\033[31m4. Division (/) \033[0m")
             choice = int(input("Enter the Operation from 1-4 (1,2,3,4): "))
 
             if choice not in [1, 2, 3, 4]:
@@ -39,28 +39,31 @@ def calculator():
 
         except ValueError:
             error_message = "You Have Entered an Invalid Character, Number, or Choice"
-            print("ValueError: " + error_message)
+            print("\033[91m" + "ValueError: " + error_message)
+            print("\033[0m")
 
         except ZeroDivisionError:
             zero_division_error_message = "The Number Cannot Be Divided By Zero"
-            print("ZeroDivisionError:" + zero_division_error_message)
+            print("\033[91m" + "ZeroDivisionError:" + zero_division_error_message)
+            print("\033[0m")
 
         except Exception as exception:
-            print("An error occurred: Please Try Again!", exception)
+            print("\033[91m" + "An error occurred: Please Try Again!", exception)
+            print("\033[0m")
 
         while True:
             try:
                 repeat = input("Do you want to use the Program again? ('y' for Yes / 'n' for No): ").strip().lower()
                 if repeat not in ['y', 'n']:
                     repeat_error_message = "Invalid input! Please enter 'y' for Yes or 'n' for No."
-                    raise ValueError(repeat_error_message)
+                    raise ValueError("\033[91m" + repeat_error_message + "\033[0m")
                 break
 
             except ValueError as exception:
                 print(exception)
 
         if repeat != 'y':
-            print("Thank You for using this Calculator!")
+            print("\033[95m" + "Thank You for using this Calculator!")
             break
 
 
