@@ -24,3 +24,5 @@ def calculator():
 
             if choice not in [1, 2, 3, 4]:
                 raise ValueError()
+
+            num_1 = float(input("Please Enter The First Number: "))
