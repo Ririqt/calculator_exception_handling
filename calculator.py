@@ -4,4 +4,5 @@ def calculator():
 
     def subtract_number(number_1, number_2):
         return number_1 - number_2
-    
+
+    def multiply_number(number_1, number_2):
