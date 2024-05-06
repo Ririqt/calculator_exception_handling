@@ -33,7 +33,9 @@ def calculator():
             if num_1_str.startswith('0') and not num_1_str.startswith('0.'):
                 raise ValueError()
 
-            num_2 = float(input("Please Enter the Second Number: "))
+            num_2_str = input("Please Enter the Second Number: ")
+            if num_2_str.startswith('0') and not num_2_str.startswith('0.'):
+                raise ValueError()
 
             if choice == 1:
                 print("Result: ", add_number(num_1, num_2))
