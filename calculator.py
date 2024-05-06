@@ -38,3 +38,5 @@ def calculator():
                 print("Result: ", divide_number(num_1, num_2))
 
         except ValueError:
+            error_message = "You Have Entered an Invalid Character, Number, or Choice"
+ 
