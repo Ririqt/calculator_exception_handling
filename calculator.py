@@ -14,3 +14,4 @@ def calculator():
         return number_1 / number_2
 
     while True:
+        try:
