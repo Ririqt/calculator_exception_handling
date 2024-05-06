@@ -1,4 +1,6 @@
+# Creating a Function for the Calculator
 def calculator():
+    # Creating the Operation of Addition, Subtraction, Multiplication, and Division
     def add_number(number_1, number_2):
         result = number_1 + number_2
         return int(result) if result.is_integer() else result
@@ -17,6 +19,7 @@ def calculator():
         result = round(number_1 / number_2, 2)
         return int(result) if result.is_integer() else result
 
+    # Creating the Program's Interface
     while True:
         try:
             print("-------Choose Your Operation-------\n")
@@ -29,6 +32,7 @@ def calculator():
             if choice not in [1, 2, 3, 4]:
                 raise ValueError()
 
+            # User's Input for the Numbers
             num_1_str = input("Please Enter The First Number: ")
             if num_1_str.startswith('0') and not num_1_str.startswith('0.'):
                 raise ValueError()
@@ -40,6 +44,7 @@ def calculator():
             num_1 = float(num_1_str)
             num_2 = float(num_2_str)
 
+            # Call the Desired Functions upon user's choice
             if choice == 1:
                 print("Result: ", add_number(num_1, num_2))
             elif choice == 2:
@@ -49,6 +54,7 @@ def calculator():
             elif choice == 4:
                 print("Result: ", divide_number(num_1, num_2))
 
+        # Getting the Errors
         except ValueError:
             error_message = "You Have Entered an Invalid Character, Number, or Choice"
             print("\033[91m" + "ValueError: " + error_message)
@@ -63,6 +69,7 @@ def calculator():
             print("\033[91m" + "An error occurred: Please Try Again!", exception)
             print("\033[0m")
 
+        # Creating a Loop if the User wants to try again
         while True:
             try:
                 repeat = input("Do you want to use the Program again? ('y' for Yes / 'n' for No): ").strip().lower()
@@ -73,10 +80,12 @@ def calculator():
 
             except ValueError as exception:
                 print(exception)
-
+                
+        # Display the "Thank You!" message
         if repeat != 'y':
             print("\033[95m" + "Thank You for using this Calculator!")
             break
 
 
+# Call The Main Function
 calculator()
