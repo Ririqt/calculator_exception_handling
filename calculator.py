@@ -29,7 +29,10 @@ def calculator():
             if choice not in [1, 2, 3, 4]:
                 raise ValueError()
 
-            num_1 = float(input("Please Enter The First Number: "))
+            num_1_str = input("Please Enter The First Number: ")
+            if num_1_str.startswith('0') and not num_1_str.startswith('0.'):
+                raise ValueError()
+
             num_2 = float(input("Please Enter the Second Number: "))
 
             if choice == 1:
