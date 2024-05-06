@@ -47,3 +47,6 @@ def calculator():
 
         except Exception as exception:
             print("An error occurred: Please Try Again!", exception)
+
+        while True:
+            
