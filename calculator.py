@@ -33,16 +33,16 @@ def calculator():
                 raise ValueError()
 
             # User's Input for the Numbers
-            num_1_str = input("Please Enter The First Number: ")
-            if num_1_str.startswith('0') and not num_1_str.startswith('0.'):
+            num_1_string = input("Please Enter The First Number: ")
+            if num_1_string.startswith('0') and not num_1_string.startswith('0.'):
                 raise ValueError()
 
-            num_2_str = input("Please Enter the Second Number: ")
-            if num_2_str.startswith('0') and not num_2_str.startswith('0.'):
+            num_2_string = input("Please Enter the Second Number: ")
+            if num_2_string.startswith('0') and not num_2_string.startswith('0.'):
                 raise ValueError()
 
-            num_1 = float(num_1_str)
-            num_2 = float(num_2_str)
+            num_1 = float(num_1_string)
+            num_2 = float(num_2_string)
 
             # Call the Desired Functions upon user's choice
             if choice == 1:
@@ -80,7 +80,7 @@ def calculator():
 
             except ValueError as exception:
                 print(exception)
-                
+
         # Display the "Thank You!" message
         if repeat != 'y':
             print("\033[95m" + "Thank You for using this Calculator!")
