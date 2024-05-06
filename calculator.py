@@ -1,17 +1,21 @@
 def calculator():
     def add_number(number_1, number_2):
-        return number_1 + number_2
+        result = number_1 + number_2
+        return int(result) if result.is_integer() else result
 
     def subtract_number(number_1, number_2):
-        return number_1 - number_2
+        result = number_1 - number_2
+        return int(result) if result.is_integer() else result
 
     def multiply_number(number_1, number_2):
-        return number_1 * number_2
+        result = number_1 * number_2
+        return int(result) if result.is_integer() else result
 
     def divide_number(number_1, number_2):
         if number_2 == 0:
             raise ZeroDivisionError()
-        return number_1 / number_2
+        result = round(number_1 / number_2, 2)
+        return int(result) if result.is_integer() else result
 
     while True:
         try:
