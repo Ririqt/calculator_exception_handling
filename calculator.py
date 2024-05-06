@@ -1,4 +1,3 @@
-# Calculator Program
 # Creating a Function for the Calculator
 def calculator():
     # Creating the Operation of Addition, Subtraction, Multiplication, and Division
