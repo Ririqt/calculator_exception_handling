@@ -26,3 +26,5 @@ def calculator():
                 raise ValueError()
 
             num_1 = float(input("Please Enter The First Number: "))
+            num_2 = float(input("Please Enter the Second Number: "))
+            
