@@ -32,4 +32,6 @@ def calculator():
                 print("Result: ", add_number(num_1, num_2))
             elif choice == 2:
                 print("Result: ", subtract_number(num_1, num_2))
+            elif choice == 3:
+                print("Result: ", multiply_number(num_1, num_2))
                 
