@@ -58,3 +58,6 @@ def calculator():
 
             except ValueError as exception:
                 print(exception)
+
+        if repeat != 'y':
+            
