@@ -36,4 +36,5 @@ def calculator():
                 print("Result: ", multiply_number(num_1, num_2))
             elif choice == 4:
                 print("Result: ", divide_number(num_1, num_2))
-                
+
+        except ValueError:
