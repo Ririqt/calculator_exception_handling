@@ -12,3 +12,5 @@ def calculator():
         if number_2 == 0:
             raise ZeroDivisionError()
         return number_1 / number_2
+
+    while True:
