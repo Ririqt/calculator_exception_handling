@@ -46,4 +46,4 @@ def calculator():
             print("ZeroDivisionError:" + zero_division_error_message)
 
         except Exception as exception:
-            
+            print("An error occurred: Please Try Again!", exception)
